@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alarm-card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 1px 10px 30px 5px  #38bdf8;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+.current-time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-variant-numeric: tabular-nums;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    text-align: center;
+}
+
+input[type="time"]:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-set {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.btn-set:hover {
+    background: #7dd3fc;
+}
+
+.ringing-controls {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-snooze {
+    background: #eab308;
+    color: #0f172a;
+}
+
+.btn-snooze:hover {
+    background: #fde047;
+}
+
+.btn-clear {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-clear:hover {
+    background: #f87171;
+}
+
+.status {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    min-height: 20px;
+}

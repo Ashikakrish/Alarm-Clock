@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock with Snooze & Sound</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="alarm-card">
+        <h1>ALARM CLOCK</h1>
+        
+        <div class="current-time" id="clockDisplay">00:00:00</div>
+
+        <div class="inputs-container">
+            <input type="time" id="alarmTimeInput">
+            <button class="btn-set" id="actionBtn" onclick="toggleAlarm()">Set Alarm</button>
+            
+            <div class="ringing-controls" id="ringControls">
+                <button class="btn-snooze" onclick="snoozeAlarm()">Snooze (5 Mins)</button>
+                <button class="btn-clear" onclick="dismissAlarm()">Stop</button>
+            </div>
+        </div>
+
+        <div class="status" id="statusMessage">No alarm set.</div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
